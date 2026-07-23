@@ -4,7 +4,7 @@
 
 «Les saveurs de l'Afrique, dans votre assiette.»
 
-Étoile d'Afrique est un site web de restaurant africain spécialisé dans les mets locaux burkinabè.
+Étoile d'Afrique est un site web de restaurant africain .
 
 📌 Pages disponibles
 
@@ -22,6 +22,3 @@
 
 HTML5 • CSS3 • JavaScript • JSON
 
----
-
-© 2026 Étoile d'Afrique — Groupe 09 — CS28 — BIT
