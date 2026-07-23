@@ -1,1 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservez votre table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <img src="images/logo du restau.png" alt="Logo de mon restaurant">
+        </div>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Notre Menu</a>
+            <a href="#" class="active">Réservation</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <div class="nav-actions">
+                <a href="#panier" aria-label="Panier">
+                    <img src="images/panier.svg" alt="Panier" width="22" height="22">
+                    <span>0</span>
+                </a>
 
+                <a href="#profil" aria-label="Mon compte">
+                <img src="images/user-icone.svg" alt="Compte" width="22" height="22">
+                </a>
+                <button class="btn-order">Commander</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Réservez votre table</h1>
+    <p>Profitez d'un moment chaleureux autour des saveurs authentiques de l'Afrique.</p>
+  </div>
+</section>
+
+<div class="form-wrap">
+    <div class="form-card">
+        <div class="motif-strip"></div>
+        <div class="availability-board">
+            <h4>Disponibilité des tables</h4>
+            <div class="availability-grid">
+                <div class="space-status" id="status-terrasse">
+                    <span class="space-name">Terrasse (2 pers)</span>
+                    <span class="tables-left"><strong class="count">4</strong> / 4 tables libres</span>
+                </div>
+                <div class="space-status" id="status-interieur-2">
+                    <span class="space-name">Intérieur (2 pers)</span>
+                    <span class="tables-left"><strong class="count">6</strong> / 6 tables libres</span>
+                </div>
+                <div class="space-status" id="status-interieur-4">
+                    <span class="space-name">Intérieur (4 pers)</span>
+                    <span class="tables-left"><strong class="count">5</strong> / 5 tables libres</span>
+                </div>
+                <div class="space-status" id="status-prive">
+                    <span class="space-name">Espace Privé (2 pers)</span>
+                    <span class="tables-left"><strong class="count">5</strong> / 5 tables libres</span>
+                </div>
+            </div>
+        </div>
+
+        <form id="reservationForm">
+            <div class="grid-2">
+                <div class="field">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" placeholder="Nom complet" required>
+                </div>
+                <div class="field">
+                    <label for="tel">Numéro de téléphone</label>
+                    <input type="tel" id="tel" placeholder="+226 00 00 00 00" required>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="field">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" placeholder="Adresse e-mail" required>
+                </div>
+                <div class="field">
+                    <label for="personnes">Nombre de personnes</label>
+                    <div class="stepper">
+                        <button type="button" id="minus">−</button>
+                        <span id="count">1</span>
+                        <button type="button" id="plus">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="field">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="field">
+                    <label for="heure">Heure</label>
+                    <select id="heure" required>
+                        <option value="">Choisir d'abord une date</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Choix de l'espace</label>
+                <div class="space-options">
+                    <label><input type="radio" name="espace" value="interieur" checked> Salle intérieure</label>
+                    <label><input type="radio" name="espace" value="terrasse"> Terrasse</label>
+                    <label><input type="radio" name="espace" value="prive"> Espace privé</label>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="message">Message ou demande spéciale</label>
+                <textarea id="message" placeholder="Message ou demande spéciale"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Confirmer ma réservation</button>
+        </form>
+    </div>
+</div>
+
+<section class="infos">
+    <img src="images/photo du restau.jpeg" alt="photo de mon restaurant">
+    <h3 class="infos-heading">Informations pratiques</h3>
+    <div class="infos-grid">
+        <div class="infos-card">
+            <div class="icon">🕒</div>
+            <div>
+                <h3>Horaires d'ouverture</h3>
+                <p>Lundi – Vendredi : 9h00 – 22h00</p>
+                <p>Samedi : 10h00 – 23h00</p>
+                <p>Dimanche : 12h00 – 21h00</p>
+            </div>
+        </div>
+
+        <div class="infos-card">
+            <div class="icon">📍</div>
+            <div>
+                <h3>Adresse</h3>
+                <p>Avenue Kwame Nkrumah</p>
+                <p>Ouagadougou, Burkina Faso</p>
+            </div>
+        </div>
+
+        <div class="infos-card">
+            <div class="icon">📞</div>
+            <div>
+                <h3>Téléphone</h3>
+                <p>+226 25 30 00 00</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cta-order">
+        <h3>Vous souhaitez simplement commander ?</h3>
+        <button class="btn">Découvrir notre menu</button>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-inner">
+
+         <div class="footer-col">
+            <h4>Liens rapides</h4>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Notre Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Horaires d'ouverture</h4>
+            <ul>
+                <li>Lun – Ven : 9h00 – 22h00</li>
+                <li>Samedi : 10h00 – 23h00</li>
+                <li>Dimanche : 12h00 – 21h00</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+                <li>📞 +226 25 30 00 00</li>
+                <li>📍 Avenue Kwame Nkrumah, Ouagadougou, Burkina Faso</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <div class="footer-logo">
+                <span class="mark">★</span>
+                Étoile d'Afrique
+            </div>
+            <p>Découvrez une expérience culinaire authentique au cœur des saveurs d'Afrique de l'Ouest, dans un cadre chaleureux et raffiné.</p>
+            <div class="socials">
+                <a href="#" aria-label="Facebook">
+                    <img src="images/facebook-svgrepo-com.svg" alt="Facebook">
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <img src="images/instagram-167-svgrepo-com.svg" alt="Instagram">
+                </a>
+                <a href="#" aria-label="WhatsApp">
+                    <img src="images/whatsapp-svgrepo-com.svg" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="reservation.js"></script>
+</body>
+  </html>
