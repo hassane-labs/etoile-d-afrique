@@ -150,7 +150,7 @@
 
   async function init() {
     try {
-      const res = await fetch("/data/menu.json");
+      const res = await fetch("data/menu.json");
       if (!res.ok) throw new Error("HTTP " + res.status);
       const data = await res.json();
       state.items = data.items;
@@ -168,20 +168,4 @@
   }
 
   init();
-
-   window.afficherConfirmation = fonction(); {
-    if (state.cartCount === 0) {
-      alert("Votre panier est vide. Ajoutez des plats avant de commander.");
-      return;
-    }
-      alert("Votre commande a été passée !\n\nNombre d'article : " + state.cartCount + "\n\nMerci pour votre confiance !");
-      state.cart.clear();
-      state.cartCount = 0;
-      updateCartBadge();
-      renderGrid();
-  };
-
-  init();
-
 })();
-        
