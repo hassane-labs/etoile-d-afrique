@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Étoile d'Afrique — Les saveurs de l'Afrique, dans votre assiette</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <img src="/images/logo-main.png" alt="">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#top" class="nav-link is-active">Accueil</a>
+      <a href="../Menu/menu.html" class="nav-link">Menu</a>
+      <a href="#apropos" class="nav-link">À propos</a>
+      <a href="/Reservation/reservation.html" class="nav-link">Réservation</a>
+      <a href="/Contact/contact.html"  class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Panier">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <a class="icon-btn" href="/Dashboard/dashboard.html" aria-label="Compte">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+      </a>
+      <a href="/Menu/menu.html" class="btn btn-primary btn-sm">Commander</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+
+
+  <!--BANER-->
+  <section class="baner">
+    <div class="baner-pattern" aria-hidden="true"> <img class="baner-img" src="/images/baner.jpg" alt=""></div>
+    <div class="baner-inner">
+      <p class="eyebrow">Cuisine burkinabè ouest-africaine</p>
+      <h1 class="baner-title">Les saveurs de l'Afrique,<em class="txt"> dans votre assiette</em></h1>
+      <p class="baner-text">Découvrez une cuisine authentique inspirée des traditions culinaires du Burkina Faso. Des plats généreux, préparés avec passion et servis avec le sourire.</p>
+      <div class="baner-cta">
+        <a href="/Menu/menu.html" class="btn btn-primary">Découvrir notre menu</a>
+        <a href="/Dashboard/dashboard.html" class="btn btn-outline">Commander maintenant</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--SPECIALITES-->
+  <section class="section specialties" id="specialites">
+    <div class="section-head">
+      <span class="tag">Nos coups de cœur</span>
+      <h2>Nos spécialités</h2>
+    </div>
+
+    <div class="card-grid" id="cardGrid">
+      <article class="dish-card" data-price="1200" data-name="Riz gras">
+        <div class="dish-media dish-media--1"><span class="dish-icon"><img src="/images/riz-soumbala.jpeg" alt=""></span></div>
+        <div class="dish-body">
+          <h3>Riz gras au soumbala</h3>
+          <p>Découvrez une cuisine authentique inspirée des traditions culinaires du Burkina Faso. Des...</p>
+          <div class="dish-foot">
+            <span class="price">1 000 <small>FCFA</small></span>
+            <a href="/Menu/menu.html" class="btn btn-add">Voir le menu</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card" data-price="2500" data-name="Tô accompagné de sauce">
+        <div class="dish-media dish-media--2"><span class="dish-icon"><img src="/images/sauce-feuille.jpeg" alt=""></span></div>
+        <div class="dish-body">
+          <h3>Tô sauce feuille</h3>
+          <p>Découvrez une cuisine authentique inspirée des traditions culinaires du Burkina Faso.</p>
+          <div class="dish-foot">
+            <span class="price">1 000 <small>FCFA</small></span>
+            <a href="/Menu/menu.html" class="btn btn-add">Voir le menu</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card" data-price="1300" data-name="Poulet braisé">
+        <div class="dish-media dish-media--3"><span class="dish-icon"><img src="/images/brochettes.jpg" alt=""></span></div>
+        <div class="dish-body">
+        
+          <h3>Brochettes</h3>
+          <p>Découvrez une cuisine authentique inspirée des traditions culinaires du Burkina Faso.</p>
+          <div class="dish-foot">
+            <span class="price">1 000 <small>FCFA</small></span>
+            <a href="/Menu/menu.html" class="btn btn-add">Voir le menu</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card" data-price="1300" data-name="Spaghetti / pâtes avec accompagnement">
+        <div class="dish-media dish-media--4"><span class="dish-icon"><img src="/images/poisson-braisé-alloco-frites.jpg" alt=""></span></div>
+        <div class="dish-body">
+          <h3>Poisson braisé + alloco</h3>
+          <p>Poisson grillé avec accompagnement inspiré des traditions culinaires du Burkina Faso.</p>
+          <div class="dish-foot">
+            <span class="price">2 500 <small>FCFA</small></span>
+            <a href="/Menu/menu.html" class="btn btn-add">Voir le menu</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <!--WHY EA-->
+  <section class="section why">
+    <div class="why-divider" aria-hidden="true"></div>
+    <div class="section-head">
+      <span class="tag">Notre engagement</span>
+      <h2>Pourquoi nous choisir</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <span class="why-icon-badge"><span class="why-icon">🌿</span></span>
+        <h3>Produits frais</h3>
+        <p>Produits locaux, sourcés chaque jour auprès de nos producteurs.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon-badge"><span class="why-icon">👨‍🍳</span></span>
+        <h3>Cuisine authentique</h3>
+        <p>Des recettes transmises de génération en génération.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon-badge"><span class="why-icon">❤</span></span>
+        <h3>Préparé avec passion</h3>
+        <p>Chaque plat est préparé avec soin, comme à la maison.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon-badge"><span class="why-icon">⏱</span></span>
+        <h3>Service rapide</h3>
+        <p>Un service attentionné, sans compromis sur la rapidité.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--LE MENU-->
+  <section class="section menu" id="menu">
+    <div class="section-head">
+      <span class="tag">Explorez</span>
+      <h2>Notre menu</h2>
+    </div>
+    <div class="menu-grid">
+      <a class="menu-tile" href="/Menu/menu.html">
+        <span class="menu-tile-media menu-tile-media--1"><span class="tile-icon"><img src="/images/riz-soumbala.jpeg" alt=""></span></span>
+        
+      </a>
+      <a class="menu-tile" href="/Menu/menu.html">
+        <span class="menu-tile-media menu-tile-media--2"><span class="tile-icon"><img src="/images/poulet-yassa.jpeg" alt=""></span></span>
+        
+      </a>
+      <a class="menu-tile" href="/Menu/menu.htmll">
+        <span class="menu-tile-media menu-tile-media--3"><span class="tile-icon"><img src="/images/salade.jpg" alt=""></span></span>
+        
+      </a>
+      <a class="menu-tile" href="/Menu/menu.html">
+        <span class="menu-tile-media menu-tile-media--4"><span class="tile-icon"><img src="/images/beignets-sucré.jpeg" alt=""></span></span>
+        
+      </a>
+      <a class="menu-tile" href="/Menu/menu.html">
+        <span class="menu-tile-media menu-tile-media--5"><span class="tile-icon"><img src="/images/glace-fraise.jpeg" alt=""></span></span>
+        
+      </a>
+      <a class="menu-tile" href="/Menu/menu.html">
+        <span class="menu-tile-media menu-tile-media--6"><span class="tile-icon"><img src="/images/malia.jpg" alt=""></span></span>
+        
+      </a>
+    </div>
+  </section>
+
+  
+  <!--À PROPOS-->
+  <section class="section apropos" id="apropos">
+    <div class="apropos-media" aria-hidden="true">
+      <div class="apropos-plate"><img class="logo" src="/images/logo-second.png" alt=""></div>
+    </div>
+    <div class="apropos-content">
+      <span class="tag">Notre histoire</span>
+      <h2>À propos d'Étoile d'Afrique</h2>
+      <p>Née à Ouagadougou, Étoile d'Afrique est née d'une passion familiale pour la cuisine burkinabè. Depuis nos débuts, nous cuisinons chaque plat comme à la maison : des produits frais, des recettes transmises de génération en génération et un service pensé pour vous faire sentir chez vous.</p>
+      <p>Notre équipe s'engage chaque jour à faire voyager vos papilles à travers les saveurs authentiques de l'Afrique de l'Ouest.</p>
+     
+    </div>
+  </section>
+
+
+   <!--CTA -->
+  <section class="section cta-band" id="reservation">
+    <div class="cta-pattern" aria-hidden="true"></div>
+    <div class="cta-content">
+      <h2>Une envie de découvrir les<br>saveurs de l'Afrique ?</h2>
+      <a href="/Menu/menu.html" class="btn btn-primary">Voir le menu</a>
+    </div>
+  </section>
+
+</main>
+
+<!--FOOTER-->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/images/logo-second.png" alt="">
+      <p>Restaurant africain authentique célébrant les traditions culinaires du Burkina Faso, un plat à la fois.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com" target="_blank"><img class="fb" src="/images/facebook-svgrepo-com.svg" alt=""></a>
+        <a href="https://www.instagram.com" target="_blank" ><img src="/images/instagram-167-svgrepo-com.svg" alt=""></a>
+        <a href="https://www.x.com" target="_blank" ><img class="x-icone" src="/images/x.png" alt=""></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Liens rapides</h4>
+      <a href="#top">Accueil</a>
+      <a href="/Menu/menu.html">Notre Menu</a>
+      <a href="#apropos">À propos</a>
+      <a href="/Reservation/reservation.html">Réservation</a>
+      <a href="/Contact/contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Horaires d'ouverture</h4>
+      <p>Lun – Ven : 9h00 – 22h00</p>
+      <p>Samedi : 10h00 – 23h00</p>
+      <p>Dimanche : 12h00 – 21h00</p>
+    </div>
+    <div class="footer-col">
+      <h4>  Contact </h4>
+      <p> 📞 +226 06 00 00 00</p>
+      <p> 📍 Avenue Kwame Nkrumah, Ouagadougou, Burkina Faso</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Étoile d'Afrique — Tous droits réservés</div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
