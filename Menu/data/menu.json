@@ -56,7 +56,7 @@
       "price": 3500,
       "rating": 5,
       "category": "plats",
-      "image": "/images/dishes/poulet-braise-atieke.jpg",
+      "image": "images/dishes/poulet-braise-atieke.jpg",
       "tag": "Populaire"
     },
 
@@ -136,7 +136,7 @@
       "description": "Bouillon riche en viande et épices.",
       "price": 2500,
       "rating": 4,
-      "category": "dishes",
+      "category": "plats",
       "image": "images/dishes/soupe-de-viande.jpg"
     },
 
@@ -262,7 +262,7 @@
 
     {
       "id": "degue",
-      "name": "Dégué",
+      "name": "Dèguê",
       "description": "Dessert traditionnel à base de mil et lait.",
       "price": 500,
       "rating": 5,
