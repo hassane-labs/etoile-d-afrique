@@ -8,7 +8,7 @@
     text-align: center;
     padding:25px 20px;
     background: linear-gradient(rgba(70,40,20,.6), rgba(70,40,20,.6)),
-     url("/images/hero-restaurant.jpeg");
+     url("images/hero-restaurant.jpeg");
     background-size: cover;
     background-position: center;
     color: white;
