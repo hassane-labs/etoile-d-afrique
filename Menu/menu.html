@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Étoile d'Afrique — Notre Menu</title>
+<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand brand-logo" href="#top">
+      <img src="images/logo-main.png" alt="Étoile d'Afrique">
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="../index.html">Accueil</a>
+      <a href="#menu" class="active">Notre Menu</a>
+      <a href="../Reservation/reservation">Réservation</a>
+      <a href="../Contact/contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn cart-icon-btn" aria-label="Panier" title="Panier">
+        <img class="panier" src="/images/panier.svg" alt="panier de course"><span class="badge" id="cart-badge">0</span>
+      </button>
+      <button  class="icon-btn" aria-label="Compte" title="Mon compte"> 
+        <a href="/Dashbord/dashbord.html"> <img  class="user" src="/images/user-icone.svg" alt=""></a>
+      </button>
+      <button class="btn btn-primary" onclick="afficherConfirmation()">Commander</button>
+    </div>
+  </div>
+</header>
+
+
+
+
+<section class="hero" id="top">
+  <div class="hero-content">
+    <h1>Notre Menu</h1>
+    <p>Découvrez les saveurs authentiques de la cuisine africaine et burkinabè.</p>
+  </div>
+</section>
+
+
+
+<main class="menu-section" id="menu">
+  <div class="menu-toolbar">
+    <div class="search-box">
+      <span class="search-icon" aria-hidden="true">🔍</span>
+      <input type="search" id="search-input" placeholder="Rechercher un plat…" aria-label="Rechercher un plat">
+    </div>
+    <div class="filter-pills" id="filter-pills" role="tablist" aria-label="Catégories"></div>
+  </div>
+
+  <p class="results-count" id="results-count"></p>
+
+  <div class="menu-grid" id="menu-grid"></div>
+  <p class="empty-state" id="empty-state" hidden>Aucun plat ne correspond à votre recherche. Essayez un autre mot-clé ou une autre catégorie.</p>
+</main>
+
+
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <a class="brand brand-logo" href="#top">
+        <img class="second" src="images/logo-second.png" alt="Étoile d'Afrique">
+      </a>
+      <p>Une cuisine authentique inspirée des traditions culinaires du Burkina Faso, préparée avec des produits frais et locaux.</p>
+      <div class="footer-social" aria-label="Réseaux sociaux">
+        <a href="https://www.facebook.com"  target="_blank" aria-label="Facebook"> <img class="icones" src="/images/facebook-svgrepo-com.svg" alt=""></a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img class="icones" src="/images/instagram-167-svgrepo-com.svg" alt=""></a>
+        <a href="https://www.whatsapp.com" target="_blank" aria-label="whatsapp"><img class="icones" src="/images/whatsapp-svgrepo-com.svg" alt=""></a>
+        
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Liens rapides</h3>
+      <a href="../index.html">Accueil</a>
+      <a href="#menu">Notre Menu</a>
+      <a href="../Reservation/reservation.html">Réservation</a>
+      <a href="../Contact/contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Horaires d'ouverture</h3>
+      <div class="hours-row"><span>Lun – Ven</span><span>09:00 – 22:00</span></div>
+      <div class="hours-row"><span>Samedi</span><span>10:00 – 23:00</span></div>
+      <div class="hours-row"><span>Dimanche</span><span>12:00 – 21:00</span></div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p> 📞 +226 25 30 00 00</p>
+      <p> 📍 Avenue Kwame Nkrumah, Ouagadougou, Burkina Faso</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Étoile d'Afrique — Tous droits réservés</div>
+</footer>
+
+
+<button onclick="afficherConfirmation()" class="floating-cart" id="floating-cart" aria-label="Voir le panier">
+  <a href="#"></a><img class="panier2" src="/images/panier.svg" alt="panier de course"><span class="badge" id="floating-cart-badge">0</span>
+</button>
+
+<script src="menu.js"></script>
+</body>
+</html>
 
