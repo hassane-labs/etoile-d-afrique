@@ -150,7 +150,7 @@
 
   async function init() {
     try {
-      const res = await fetch("menu.json");
+      const res = await fetch("../menu.json");
       if (!res.ok) throw new Error("HTTP " + res.status);
       const data = await res.json();
       state.items = data.items;
