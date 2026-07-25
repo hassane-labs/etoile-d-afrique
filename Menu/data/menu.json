@@ -1,1 +1,364 @@
+{
+  "categories": [
+    { "id": "tout", "label": "Tout" },
+    { "id": "plats", "label": "Plats" },
+    { "id": "entrees", "label": "Entrées" },
+    { "id": "boissons", "label": "Boissons" },
+    { "id": "desserts", "label": "Desserts" }
+  ],
 
+  "items": [
+
+    {
+      "id": "riz-soumbala",
+      "name": "Riz au soumbala",
+      "description": "Riz traditionnel accompagné d'une sauce au soumbala.",
+      "price": 1500,
+      "rating": 5,
+      "category": "plats",
+      "image": "images/dishes/riz-soumbala.jpeg"
+    },
+
+    {
+      "id": "tchep",
+      "name": "Tchep",
+      "description": "Riz au poisson et légumes inspiré de la cuisine sénégalaise.",
+      "price": 2500,
+      "rating": 5,
+      "category": "plats",
+      "image": "images/dishes/tchep.jpeg"
+    },
+
+    {
+      "id": "soupe-poisson",
+      "name": "Soupe de poisson",
+      "description": "Une delicieuse soupe de poisson agrementée avec des epices locales.",
+      "price": 2500,
+      "rating": 4,
+      "category": "plats",
+      "image": "images/dishes/soupe-de-poisson.jpg"
+    },
+
+    {
+      "id": "riz-sauce-arrachide",
+      "name": "Riz sauce patte d'arrachide",
+      "description": "Riz servi avec une sauce de patte d'arrachide onctueuse et très savoureuse.",
+      "price": 1000,
+      "rating": 4,
+      "category": "plats",
+      "image": "images/dishes/riz-sauce-patte-d-arrachide.jpg"
+    },
+
+    {
+      "id": "poulet-attieke",
+      "name": "Poulet braisé + attiéké",
+      "description": "Poulet mariné braisé accompagné d'attiéké.",
+      "price": 3500,
+      "rating": 5,
+      "category": "plats",
+      "image": "/images/dishes/poulet-braise-atieke.jpg",
+      "tag": "Populaire"
+    },
+
+    {
+      "id": "riz-graine",
+      "name": "Riz sauce graine",
+      "description": "Riz accompagné d'une sauce à base de noix de palme.",
+      "price": 1500,
+      "rating": 4,
+      "category": "plats",
+      "image": "images/dishes/riz-sauce-graine.jpeg"
+    },
+
+    {
+      "id": "poisson-alloco",
+      "name": "Poisson braisé + alloco + frites",
+      "description": "Poisson braisé servi avec alloco et frites croustillantes.",
+      "price": 2500,
+      "rating": 5,
+      "category": "plats",
+      "image": "images/dishes/poisson+braisé+alloco+frites.jpeg"
+    },
+
+    {
+      "id": "foutou-claire",
+      "name": "Foutou sauce claire",
+      "description": "Foutou traditionnel accompagné d'une sauce claire.",
+      "price": 1000,
+      "rating": 4,
+      "category": "plats",
+      "image": "images/dishes/foutou-sauce-claire.jpg"
+    },
+
+    {
+      "id": "yassa",
+      "name": "Poulet Yassa",
+      "description": "Poulet mariné aux oignons et citron.",
+      "price": 1500,
+      "rating": 5,
+      "category": "plats",
+      "image": "images/dishes/poulet-yassa.jpeg"
+    },
+
+    {
+      "id": "to-feuille",
+      "name": "Tô sauce feuille",
+      "description": "Tô servi avec une sauce feuille traditionnelle.",
+      "price": 1000,
+      "rating": 5,
+      "category": "plats",
+      "image": "images/dishes/sauce-feuille.jpeg"
+    },
+
+    {
+      "id": "salade-simple",
+      "name": "Salade ",
+      "description": "Salade fraîche de saison bien garnie.",
+      "price": 1500,
+      "rating": 4,
+      "category": "entrees",
+      "image": "images/entrees/salade.jpg"
+    },
+
+    {
+      "id": "salade-fruits",
+      "name": "Salade de fruits",
+      "description": "Mélange de fruits frais pour réveiller votre apetit.",
+      "price": 1800,
+      "rating": 5,
+      "category": "entrees",
+      "image": "images/entrees/salade-de-fruits.jpg"
+    },
+
+    {
+      "id": "soupe-viande",
+      "name": "Soupe de viande",
+      "description": "Bouillon riche en viande et épices.",
+      "price": 2500,
+      "rating": 4,
+      "category": "dishes",
+      "image": "images/dishes/soupe-de-viande.jpg"
+    },
+
+    {
+      "id": "brochette",
+      "name": "Brochette",
+      "description": "Brochettes grillées au feu de bois .",
+      "price": 1000,
+      "rating": 5,
+      "category": "entrees",
+      "image": "images/entrees/brochettes.jpg"
+    },
+
+    {
+      "id": "nems",
+      "name": "Nems",
+      "description": "Nems croustillants servis chauds.",
+      "price": 1500,
+      "rating": 4,
+      "category": "entrees",
+      "image": "images/entrees/nems.jpeg"
+    },
+
+    {
+      "id": "pastel",
+      "name": "Pastel",
+      "description": "Beignets farcis à la viande ou au poisson.",
+      "price": 500,
+      "rating": 4,
+      "category": "entrees",
+      "image": "images/entrees/pastel.jpeg"
+    },
+
+    {
+      "id": "bissap",
+      "name": "Bissap",
+      "description": "Boisson naturelle à base d'hibiscus.",
+      "price": 500,
+      "rating": 5,
+      "category": "boissons",
+      "image": "images/drinks/bissap.jpg"
+    },
+
+    {
+      "id": "mangue",
+      "name": "Jus de mangue",
+      "description": "Pur jus de mangue frais.",
+      "price": 500,
+      "rating": 5,
+      "category": "boissons",
+      "image": "images/drinks/jus-de-mangue.jpg"
+    },
+
+    {
+      "id": "tamarin",
+      "name": "Jus de tamarin",
+      "description": "Jus naturel de tamarin.",
+      "price": 500,
+      "rating": 4,
+      "category": "boissons",
+      "image": "images/drinks/jus-de-tamarin.jpg"
+    },
+
+    {
+      "id": "gingembre",
+      "name": "Jus de gingembre",
+      "description": "Boisson fraîche au gingembre.",
+      "price": 500,
+      "rating": 5,
+      "category": "boissons",
+      "image": "images/drinks/jus-de-gimgimbre.jpg"
+    },
+
+    {
+      "id": "tedo",
+      "name": "Jus de pain de singe au lait",
+      "description": "Boisson traditionnelle au lait.",
+      "price": 500,
+      "rating": 5,
+      "category": "boissons",
+      "image": "images/drinks/tedo-lait.jpeg"
+    },
+
+    {
+      "id": "weda",
+      "name": "Jus de wéda",
+      "description": "Boisson locale rafraîchissante.",
+      "price": 500,
+      "rating": 4,
+      "category": "boissons",
+      "image": "images/drinks/jus-de-wéda.jpeg"
+    },
+
+    {
+      "id": "malia",
+      "name": "Malia",
+      "description": "Boisson locale traditionnelle.",
+      "price": 1200,
+      "rating": 4,
+      "category": "boissons",
+      "image": "images/drinks/malia.jpg"
+    },
+
+    {
+      "id": "ochata",
+      "name": "Ochata",
+      "description": "Boisson rafraîchissante artisanale.",
+      "price": 500,
+      "rating": 4,
+      "category": "boissons",
+      "image": "images/drinks/horchata.jpg"
+    },
+
+    {
+      "id": "dafani",
+      "name": "Dafani",
+      "description": "Boisson gazeuse populaire.",
+      "price": 1200,
+      "rating": 4,
+      "category": "boissons",
+      "image": "images/drinks/dafani.jpeg"
+    },
+
+    {
+      "id": "degue",
+      "name": "Dégué",
+      "description": "Dessert traditionnel à base de mil et lait.",
+      "price": 500,
+      "rating": 5,
+      "category": "desserts",
+      "image": "images/desserts/dèguè.jpeg"
+    },
+
+    {
+      "id": "yaourt-fruits",
+      "name": "Yaourt aux fruits",
+      "description": "Yaourt frais accompagné de fruits.",
+      "price": 1500,
+      "rating": 4,
+      "category": "desserts",
+      "image": "images/desserts/yaourt-aux-fruits.jpeg"
+    },
+
+    {
+      "id": "glace-vanille",
+      "name": "Glace à la vanille",
+      "description": "Glace artisanale à la vanille.",
+      "price": 1000,
+      "rating": 5,
+      "category": "desserts",
+      "image": "images/desserts/galce-vanille.jpeg"
+    },
+
+    {
+      "id": "glace-mangue",
+      "name": "Glace à la mangue",
+      "description": "Glace artisanale à la mangue.",
+      "price": 1000,
+      "rating": 5,
+      "category": "desserts",
+      "image": "images/desserts/glace-mangue.jpeg"
+    },
+
+    {
+      "id": "glace-fraise",
+      "name": "Glace à la fraise",
+      "description": "Glace artisanale à la fraise.",
+      "price": 1000,
+      "rating": 5,
+      "category": "desserts",
+      "image": "images/desserts/glace-fraise.jpeg"
+    },
+
+    {
+      "id": "glace-chocolat",
+      "name": "Glace au chocolat au lait",
+      "description": "Glace crémeuse au chocolat.",
+      "price": 1000,
+      "rating": 5,
+      "category": "desserts",
+      "image": "images/desserts/glace-chocolat-lait.jpeg"
+    },
+
+    {
+      "id": "glace-coco",
+      "name": "Glace au coco",
+      "description": "Glace artisanale à la noix de coco.",
+      "price": 1000,
+      "rating": 5,
+      "category": "desserts",
+      "image": "images/desserts/glace-coco.jpeg"
+    },
+
+    {
+      "id": "beignets",
+      "name": "Beignets sucrés",
+      "description": "Beignets moelleux et légèrement sucrés.",
+      "price": 1000,
+      "rating": 5,
+      "category": "desserts",
+      "image": "images/desserts/beignets-sucré.jpeg"
+    },
+
+    {
+      "id": "gateau-coco",
+      "name": "Gâteau à la noix de coco",
+      "description": "Gâteau maison à la noix de coco.",
+      "price": 2000,
+      "rating": 5,
+      "category": "desserts",
+      "image": "images/desserts/gâteau-coco.jpeg"
+    },
+
+    {
+      "id": "tarte-fruits",
+      "name": "Tarte aux fruits",
+      "description": "Tarte garnie de fruits frais.",
+      "price": 2000,
+      "rating": 5,
+      "category": "desserts",
+      "image": "images/desserts/tarte-fruits.jpeg"
+    }
+
+  ]
+}
