@@ -54,6 +54,9 @@ header {
   justify-content: space-between;
   padding: 10px 20px;
 }
+.header-actions {
+  margin-left: 20px;
+}
 .logo img {
   height: 90px;
   width: auto;
