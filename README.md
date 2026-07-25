@@ -16,7 +16,7 @@
 
 🌐 Accéder au site
 
-👉 [Visiter le site Étoile d'Afrique](https://VOTRE-USERNAME.github.io/etoile-d-afrique/)
+👉 [Visiter le site Étoile d'Afrique](https://hassane-labs.github.io/etoile-d-afrique/)
 
 🛠️ Technologies
 
