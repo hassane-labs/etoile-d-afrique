@@ -10,7 +10,7 @@
   --leaf: #6b8f47;
   --shadow: 0 10px 30px -12px rgba(58,35,24,0.25);
   --radius: 18px;
-  --hero-image: url('/images/baner.jpg');
+  --hero-image: url('images/baner.jpg');
   font-size: 16px;
 }
 
