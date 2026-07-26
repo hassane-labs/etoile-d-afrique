@@ -207,7 +207,12 @@
   }
 }
  /* Couleurs */
-  --color-bg: #f2e8d5;
+:root{/*
+    
+    correction ici le root:
+    
+    */
+    --color-bg: #f2e8d5;
   --color-panel: #f8f2e4;
   --color-panel-alt: #fffdf8;
   --color-border: #e3d5b8;
@@ -222,7 +227,7 @@
   --color-badge-livraison-text: #ffffff;
   --color-badge-terminee-bg: #4caf6d;
   --color-badge-terminee-text: #ffffff;
-
+  
   /* Typographie */
   --font-display: Georgia, 'Times New Roman', serif;
   --font-body: 'Segoe UI', Arial, sans-serif;
