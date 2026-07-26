@@ -43,7 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-
+// --- FONCTION DE SAUVEGARDE POUR LE DASHBOARD ---
+  function incrémenterReservations() {
+    let totalReservations = parseInt(localStorage.getItem('totalReservations')) || 0;
+    totalReservations++;
+    localStorage.setItem('totalReservations', totalReservations);
+  }
 
   const dateInput = document.getElementById('date');
   const heureSelect = document.getElementById('heure');
@@ -168,6 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Validation et décompte
       tablesStock[targetKey].available--;
       updateAvailabilityUI();
+      incrémenterReservations();
 
       const nom = document.getElementById('nom').value;
       const date = document.getElementById('date').value;
