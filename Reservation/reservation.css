@@ -164,7 +164,7 @@ nav a.active::after {
   position: absolute;
   inset: 0;
   background: linear-gradient(rgba(33, 22, 16, 0.4), rgba(33, 22, 16, 0.6)), 
-              url("images/image arriere plan.jpeg") center/cover no-repeat;
+              url("images/baner.jpg") center/cover no-repeat;
   filter: blur(3px);
   transform: scale(1.05);
   z-index: 1;
