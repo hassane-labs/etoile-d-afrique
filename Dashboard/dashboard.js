@@ -14,32 +14,42 @@ document.addEventListener('DOMContentLoaded', () => {
   const favoriteDishes = localStorage.getItem('favoriteDishes') || 0;
 
   // 3. Injection des valeurs dans les cartes
-  if (totalOrdersElem) {
-    totalOrdersElem.textContent = totalOrders;
-  }
+  if (totalOrdersElem) totalOrdersElem.textContent = totalOrders;
+  if (pendingOrdersElem) pendingOrdersElem.textContent = pendingOrders;
+  if (totalReservationsElem) totalReservationsElem.textContent = totalReservations;
+  if (favoriteDishesElem) favoriteDishesElem.textContent = favoriteDishes;
 
-  if (pendingOrdersElem) {
-    pendingOrdersElem.textContent = pendingOrders;
-  }
-
-  if (totalReservationsElem) {
-    totalReservationsElem.textContent = totalReservations;
-  }
-
-  if (favoriteDishesElem) {
-    favoriteDishesElem.textContent = favoriteDishes;
-  }
-
-  // 4. Gestion des clics sur les boutons "Voir"
+  // 4. Bouton "Voir" (commandes)
   document.querySelectorAll('.btn--voir').forEach(button => {
     button.addEventListener('click', () => {
       const orderId = button.getAttribute('data-order');
       alert('Commande sélectionnée : ' + orderId);
-      // Tu pourras remplacer cette ligne par une redirection, par exemple :
-      // window.location.href = `commande-detail.html?id=${orderId}`;
     });
   });
 
+  // 5. Bouton "Découvrir" (plats recommandés)
+  document.querySelectorAll('.btn--ghost').forEach(button => {
+    button.addEventListener('click', () => {
+      alert('Vous découvrez ce plat. Cliquez ailleurs pour continuer.');
+    });
+  });
+
+  // 6. Bouton "Modifier" (réservation)
+  const modifierBtn = document.getElementById('btn-modifier');
+  if (modifierBtn) {
+    modifierBtn.addEventListener('click', () => {
+      alert('Vous pouvez maintenant modifier votre réservation. Cliquez ailleurs pour valider.');
+    });
+  }
+
+  // 7. Bouton "Annuler" (réservation)
+  const annulerBtn = document.getElementById('btn-annuler');
+  if (annulerBtn) {
+    annulerBtn.addEventListener('click', () => {
+      alert('Votre réservation a été annulée.');
+    });
+  }
+
 });
-        
-        
+
+ 
