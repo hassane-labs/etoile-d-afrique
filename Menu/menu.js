@@ -119,21 +119,43 @@
   }
 
   function toggleFavorite(id) {
-    if (state.favorites.has(id)) {
-      state.favorites.delete(id);
-    } else {
-      state.favorites.add(id);
+  if (state.favorites.has(id)) {
+    state.favorites.delete(id);
+
+    // Si on retire un favori :
+    let favoriteDishes = parseInt(localStorage.getItem('favoriteDishes')) || 0;
+    if (favoriteDishes > 0) {
+      localStorage.setItem('favoriteDishes', favoriteDishes - 1);
     }
-    renderGrid();
+  } else {
+    state.favorites.add(id);
+
+    // ---> RAJOUTE CES 3 LIGNES DANS LE ELSE <---
+    let favoriteDishes = parseInt(localStorage.getItem('favoriteDishes')) || 0;
+    favoriteDishes++;
+    localStorage.setItem('favoriteDishes', favoriteDishes);
   }
+  renderGrid();
+}
 
   function addToCart(id) {
-    if (state.cart.has(id)) return;
-    state.cart.add(id);
-    state.cartCount += 1;
-    updateCartBadge();
-    renderGrid();
-  }
+  if (state.cart.has(id)) return;
+  state.cart.add(id);
+  state.cartCount += 1;
+
+  // ---> RAJOUTE CES LIGNES POUR LE DASHBOARD <---
+  let totalOrders = parseInt(localStorage.getItem('totalOrders')) || 0;
+  let pendingOrders = parseInt(localStorage.getItem('pendingOrders')) || 0;
+
+  totalOrders++;
+  pendingOrders++;
+
+  localStorage.setItem('totalOrders', totalOrders);
+  localStorage.setItem('pendingOrders', pendingOrders);
+
+  updateCartBadge();
+  renderGrid();
+}
 
   function updateCartBadge() {
     cartBadge.textContent = state.cartCount;
