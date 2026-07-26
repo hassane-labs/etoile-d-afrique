@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord</title>
 
+  <!-- Feuilles de style -->
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<a href="index.html" class="btn btn--ghost">retour à l'accueil</a>
+  <main class="dashboard">
+
+    <h1 class="dashboard__title">Tableau de bord</h1>
+
+    <!-- ===== Cartes de statistiques ===== -->
+    <section class="stats" aria-label="Statistiques générales">
+      <div class="stat-card">
+        <div class="stat-card__text">
+          <span class="stat-card__label">Commandes totales</span>
+          <span class="stat-card__value">28</span>
+        </div>
+        <span class="stat-card__icon" aria-hidden="true">📋</span>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-card__text">
+          <span class="stat-card__label">Commandes en cours</span>
+          <span class="stat-card__value">3</span>
+        </div>
+        <span class="stat-card__icon" aria-hidden="true">⏱️</span>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-card__text">
+          <span class="stat-card__label">Réservations</span>
+          <span class="stat-card__value">5</span>
+        </div>
+        <span class="stat-card__icon" aria-hidden="true">📅</span>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-card__text">
+          <span class="stat-card__label">Favoris</span>
+          <span class="stat-card__value">12</span>
+        </div>
+        <span class="stat-card__icon" aria-hidden="true">🤍</span>
+      </div>
+    </section>
+
+    <!-- ===== Commandes récentes + Prochaine réservation ===== -->
+    <section class="main-grid">
+
+      <div class="panel orders-panel">
+        <h2 class="panel__title panel__title--bar">Commandes récentes</h2>
+
+        <div class="table-wrapper">
+          <table class="orders-table">
+            <thead>
+              <tr>
+                <th>Numéro de commande</th>
+                <th>Date</th>
+                <th>Articles</th>
+                <th>Montant</th>
+                <th>Statut</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>110000006</td>
+                <td>21 niv 2023</td>
+                <td>Poulet de drvn x1</td>
+                <td>25,00 FCFA</td>
+                <td><span class="badge badge--prep">En préparation</span></td>
+                <td><button class="btn btn--voir" data-order="110000006">Voir</button></td>
+              </tr>
+              <tr>
+                <td>110000007</td>
+                <td>21 niv 2023</td>
+                <td>2 Poulet braisé x1</td>
+                <td>15,00 FCFA</td>
+                <td><span class="badge badge--livraison">En livraison</span></td>
+                <td><button class="btn btn--voir" data-order="110000007">Voir</button></td>
+              </tr>
+              <tr>
+                <td>110000008</td>
+                <td>21 niv 2023</td>
+                <td>T masce</td>
+                <td>30,00 FCFA</td>
+                <td><span class="badge badge--terminee">Terminée</span></td>
+                <td><button class="btn btn--voir" data-order="110000008">Voir</button></td>
+              </tr>
+              <tr>
+                <td>110000009</td>
+                <td>21 niv 2023</td>
+                <td>Riz gras</td>
+                <td>25,00 FCFA</td>
+                <td><span class="badge badge--terminee">Terminée</span></td>
+                <td><button class="btn btn--voir" data-order="110000009">Voir</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <aside class="panel reservation-panel">
+        <h2 class="panel__title">Prochaine réservation</h2>
+
+        <dl class="reservation-list">
+          <div class="reservation-list__row">
+            <dt>Date</dt>
+            <dd>21 niv 2023</dd>
+          </div>
+          <div class="reservation-list__row">
+            <dt>Heure</dt>
+            <dd>19:00</dd>
+          </div>
+          <div class="reservation-list__row">
+            <dt>Nombre de personnes</dt>
+            <dd>4</dd>
+          </div>
+          <div class="reservation-list__row">
+            <dt>Espace réservé</dt>
+            <dd>Terrasse</dd>
+          </div>
+          <div class="reservation-list__row">
+            <dt>Statut</dt>
+            <dd>Confirmée</dd>
+          </div>
+        </dl>
+
+        <div class="reservation-actions">
+          <button class="btn btn--primary" id="btn-modifier">Modifier</button>
+          <button class="btn btn--ghost" id="btn-annuler">Annuler</button>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- ===== Plats favoris + Recommandations ===== -->
+    <section class="main-grid main-grid--dishes">
+
+      <div class="panel dishes-panel">
+        <h2 class="panel__title">Mes plats favoris</h2>
+
+        <div class="dish-list">
+          <article class="dish-card">
+            <img src="images/riz-gras.jpeg" alt="Riz gras" class="dish-card__img">
+            <h3 class="dish-card__name">Riz gras</h3>
+            <p class="dish-card__price">13,00 FCFA</p>
+            <button class="btn btn--primary btn--full">Commander à nouveau</button>
+          </article>
+
+          <article class="dish-card">
+            <img src="images/To-with-sauce.jpeg" alt="Tô with sauce" class="dish-card__img">
+            <h3 class="dish-card__name">Tô with sauce</h3>
+            <p class="dish-card__price">10,00 FCFA</p>
+            <button class="btn btn--primary btn--full">Commander à nouveau</button>
+          </article>
+
+          <article class="dish-card">
+            <img src="images/poulet-braise.jpeg" alt="Poulet braisé" class="dish-card__img">
+            <h3 class="dish-card__name">Poulet braisé</h3>
+            <p class="dish-card__price">13,00 FCFA</p>
+            <button class="btn btn--primary btn--full">Commander à nouveau</button>
+          </article>
+        </div>
+      </div>
+
+      <div class="panel recommendations-panel">
+        <h2 class="panel__title">Recommandations</h2>
+
+        <div class="dish-list dish-list--recommend">
+          <article class="dish-card">
+           <img src="images/Tournedos-with-sauce.jpeg" alt="Tournedos with sauce" class="dish-card__img">
+            <h3 class="dish-card__name">Tournedos with sauce</h3>
+            <button class="btn btn--ghost btn--full">Découvrir</button>
+          </article>
+
+          <article class="dish-card">
+            <img src="images/poulet-braise-et-tuntie.jpeg" alt="Poulet braisé et buntie" class="dish-card__img">
+            <h3 class="dish-card__name">Poulet braisé et buntie</h3>
+            <button class="btn btn--ghost btn--full">Découvrir</button>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="dashboard.js"></script>
+</body>
+</html>
