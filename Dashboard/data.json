@@ -1,0 +1,93 @@
+{
+  "utilisateur": {
+    "nom": "Hassane",
+    "avatar": "images/avatar/avatar.jpg"
+  },
+  "statistiques": {
+    "commandesTotales": 28,
+    "commandesEnCours": 3,
+    "reservations": 5,
+    "favoris": 12
+  },
+  "commandesRecentes": [
+    {
+      "numero": "110000006",
+      "date": "2023-11-21",
+      "dateAffichee": "21 nov. 2023",
+      "articles": "Poulet de brousse x1",
+      "montant": 25.00,
+      "statut": "preparation",
+      "statutLabel": "En préparation"
+    },
+    {
+      "numero": "110000007",
+      "date": "2023-11-21",
+      "dateAffichee": "21 nov. 2023",
+      "articles": "2x Poulet braisé",
+      "montant": 15.00,
+      "statut": "livraison",
+      "statutLabel": "En livraison"
+    },
+    {
+      "numero": "110000008",
+      "date": "2023-11-21",
+      "dateAffichee": "21 nov. 2023",
+      "articles": "Tô + masse",
+      "montant": 30.00,
+      "statut": "terminee",
+      "statutLabel": "Terminée"
+    },
+    {
+      "numero": "110000009",
+      "date": "2023-11-21",
+      "dateAffichee": "21 nov. 2023",
+      "articles": "Riz gras",
+      "montant": 25.00,
+      "statut": "terminee",
+      "statutLabel": "Terminée"
+    }
+  ],
+  "prochaineReservation": {
+    "date": "2023-11-21",
+    "dateAffichee": "21 nov. 2023",
+    "heure": "19:00",
+    "personnes": 4,
+    "espace": "Terrasse",
+    "statut": "Confirmée"
+  },
+  "platsFavoris": [
+    {
+      "id": "riz-gras",
+      "nom": "Riz gras",
+      "prix": 13.00,
+      "image": "images/plats/riz-gras.jpg",
+      "favori": true
+    },
+    {
+      "id": "to-sauce",
+      "nom": "Tô avec sauce",
+      "prix": 10.00,
+      "image": "images/plats/to-sauce.jpg",
+      "favori": true
+    },
+    {
+      "id": "poulet-braise",
+      "nom": "Poulet braisé",
+      "prix": 13.00,
+      "image": "images/plats/poulet-braise.jpg",
+      "favori": true
+    }
+  ],
+  "recommandations": [
+    {
+      "id": "to-sauce-arachide",
+      "nom": "Tô avec sauce arachide",
+      "image": "images/plats/to-sauce-arachide.jpg"
+    },
+    {
+      "id": "poulet-braise-to",
+      "nom": "Poulet braisé & tô",
+      "image": "images/plats/poulet-braise-to.jpg"
+    }
+  ]
+}
