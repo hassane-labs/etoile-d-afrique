@@ -28,6 +28,8 @@ etoile-d-afrique/
  * HTML5 / CSS3
  * JavaScript (ES6+)
  * LocalStorage API
+
+
 👥 Équipe — Groupe 9
  * PARE Imane
  * KIMA Meliane
