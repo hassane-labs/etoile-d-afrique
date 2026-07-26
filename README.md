@@ -30,8 +30,8 @@ etoile-d-afrique/
  * LocalStorage API
 👥 Équipe — Groupe 9
  * PARE Imane
- * KIEMA Meliane
+ * KIMA Meliane
  * OUEDRAOgo Hassane
- * Oueda Mohamed
- * Jeanice
+ * OUEDA Mohamed
+ * ZOUNDI Jeanice
 © 2026 Étoile d'Afrique — Tous droits réservés.
