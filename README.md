@@ -1,24 +1,37 @@
-# GROUPE 09
+🌍 Étoile d'Afrique — Site Web Restauration
 
-🌍 Étoile d'Afrique
+Étoile d'Afrique est une plateforme web dynamique conçue pour un restaurant valorisant la gastronomie africaine. Le site permet de consulter le menu interactif, de passer des commandes, d'effectuer des réservations de tables en ligne et de suivre ses activités en temps réel depuis un tableau de bord personnel synchronisé.
 
-«Les saveurs de l'Afrique, dans votre assiette.»
+### 🌟 Fonctionnalités
 
-Étoile d'Afrique est un site web de restaurant africain .
+* **Accueil :** Présentation du restaurant et vitrine des spécialités.
+* **Menu :** Consultation de la carte, gestion du panier et ajouts aux favoris.
+* **Réservation :** Module de réservation de tables en ligne.
+* **Dashboard :** Suivi en temps réel des statistiques (*commandes, réservations, favoris*).
+* **Contact :** Coordonnées, localisation et formulaire.
 
-📌 Pages disponibles
 
-- 🏠 Accueil — Présentation du restaurant et de ses spécialités
-- 🍽️ Menu — Découverte des plats et catégories
-- 📅 Réservation — Réserver une table
-- 👤 Dashboard — Espace personnel du client
-- 📞 Contact — Informations et moyens de contacter le restaurant
+### 📁 Structure du projet
 
-🌐 Accéder au site
-
-👉 [Visiter le site Étoile d'Afrique](https://hassane-labs.github.io/etoile-d-afrique/)
+etoile-d-afrique/
+├── Acceuil/
+├── Contact/
+├── Dashboard/
+├── Menu/
+├── Reservation/
+├── index.html
+├── script.js
+├── style.css
+└── README.md
 
 🛠️ Technologies
-
-HTML5 • CSS3 • JavaScript • JSON
-
+ * HTML5 / CSS3
+ * JavaScript (ES6+)
+ * LocalStorage API
+👥 Équipe — Groupe 9
+ * PARE Imane
+ * KIEMA Meliane
+ * OUEDRAOgo Hassane
+ * Oueda Mohamed
+ * Jeanice
+© 2026 Étoile d'Afrique — Tous droits réservés.
