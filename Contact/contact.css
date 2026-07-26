@@ -432,6 +432,8 @@ body{
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 .site-header .logo .logo-img {
     height: 100px;
