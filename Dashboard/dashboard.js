@@ -1,73 +1,45 @@
-/ ===== dashboard.js — Comportements généraux du dashboard =====
 alert("le js est change!");
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ---------- 1. Réservation : Modifier / Annuler ----------
-  const btnModifier = document.getElementById('btn-modifier');
-  const btnAnnuler = document.getElementById('btn-annuler');
+  // 1. Récupération des éléments HTML par leurs ID
+  const totalOrdersElem = document.getElementById('total-orders');
+  const pendingOrdersElem = document.getElementById('pending-orders');
+  const totalReservationsElem = document.getElementById('total-reservations');
+  const favoriteDishesElem = document.getElementById('favorite-dishes');
 
-  if (btnModifier) {
-    btnModifier.addEventListener('click', () => {
-      // Rend chaque valeur (les <dd>) de la réservation éditable
-      const valeurs = document.querySelectorAll('.reservation-list__row dd');
-      valeurs.forEach(dd => {
-        dd.contentEditable = true;
-        dd.classList.add('editing');
-        dd.style.outline = '1px dashed var(--color-primary, #b5622e)';
-      });
-      alert('Vous pouvez maintenant modifier votre réservation. Cliquez ailleurs pour valider.');
-    });
+  // 2. Lecture des valeurs sauvegardées dans le localStorage (0 par défaut)
+  const totalOrders = localStorage.getItem('totalOrders') || 0;
+  const pendingOrders = localStorage.getItem('pendingOrders') || 0;
+  const totalReservations = localStorage.getItem('totalReservations') || 0;
+  const favoriteDishes = localStorage.getItem('favoriteDishes') || 0;
+
+  // 3. Injection des valeurs dans les cartes
+  if (totalOrdersElem) {
+    totalOrdersElem.textContent = totalOrders;
   }
 
-  if (btnAnnuler) {
-    btnAnnuler.addEventListener('click', () => {
-      const confirmation = confirm('Voulez-vous vraiment annuler cette réservation ?');
-      if (confirmation) {
-        // Le <dd> "Statut" est le 3e dd de la liste (Nombre de personnes, Espace réservé, Statut)
-        const lignes = document.querySelectorAll('.reservation-list__row');
-        lignes.forEach(ligne => {
-          const label = ligne.querySelector('dt')?.textContent.trim();
-          if (label === 'Statut') {
-            ligne.querySelector('dd').textContent = 'Annulée';
-          }
-        });
-        alert('Réservation annulée.');
-      }
-    });
+  if (pendingOrdersElem) {
+    pendingOrdersElem.textContent = pendingOrders;
   }
 
-  // ---------- 2 & 3. Cartes plats : Commander à nouveau / Découvrir ----------
-  document.body.addEventListener('click', (e) => {
-    const carte = e.target.closest('.dish-card');
-    if (carte && e.target.matches('.btn')) {
-      const nomPlat = carte.querySelector('.dish-card__name')?.textContent.trim() || 'ce plat';
-      const texteBouton = e.target.textContent.trim();
+  if (totalReservationsElem) {
+    totalReservationsElem.textContent = totalReservations;
+  }
 
-      if (texteBouton === 'Commander à nouveau') {
-        alert(`Commande envoyée pour : ${nomPlat}`);
-        // Ici tu pourrais plus tard faire un fetch() vers un serveur pour enregistrer la commande
-      }
+  if (favoriteDishesElem) {
+    favoriteDishesElem.textContent = favoriteDishes;
+  }
 
-      if (texteBouton === 'Découvrir') {
-        alert(`Découverte de : ${nomPlat}`);
-        // Ici tu pourrais rediriger vers une page détail du plat
-      }
-    }
-
-    // ---------- 4. Commandes récentes : Voir ----------
-    if (e.target.matches('.btn--voir')) {
-      const numero = e.target.dataset.order;
-      const ligne = e.target.closest('tr');
-      if (ligne) {
-        const cellules = ligne.querySelectorAll('td');
-        const articles = cellules[2]?.textContent.trim();
-        const montant = cellules[3]?.textContent.trim();
-        const statut = ligne.querySelector('.badge')?.textContent.trim();
-        alert(
-          `Commande n°${numero}\nArticles : ${articles}\nMontant : ${montant}\nStatut : ${statut}`
-        );
-      }
-    }
+  // 4. Gestion des clics sur les boutons "Voir"
+  document.querySelectorAll('.btn--voir').forEach(button => {
+    button.addEventListener('click', () => {
+      const orderId = button.getAttribute('data-order');
+      alert('Commande sélectionnée : ' + orderId);
+      // Tu pourras remplacer cette ligne par une redirection, par exemple :
+      // window.location.href = `commande-detail.html?id=${orderId}`;
+    });
   });
 
 });
+        
+        
