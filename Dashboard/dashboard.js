@@ -1,4 +1,4 @@
-
+alert('Le fichier JS est bien chargé');
 document.addEventListener('DOMContentLoaded', () => {
 
   // 1. Récupération des éléments HTML par leurs ID
