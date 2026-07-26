@@ -31,7 +31,7 @@ etoile-d-afrique/
 👥 Équipe — Groupe 9
  * PARE Imane
  * KIMA Meliane
- * OUEDRAOgo Hassane
+ * KABORE Hassane
  * OUEDA Mohamed
- * ZOUNDI Jeanice
+ * ZOUNDI Janice
 © 2026 Étoile d'Afrique — Tous droits réservés.
